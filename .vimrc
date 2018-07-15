@@ -27,15 +27,12 @@ Plugin 'c.vim'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
-<<<<<<< HEAD
 " Plugin 'ascenator/L9', {'name': 'newL9
 Plugin 'tomasr/molokai'
 
 Plugin 'mattn/emmet-vim'
-=======
-" Plugin 'ascenator/L9', {'name': 'newL9'}
->>>>>>> 7f79017590ba84400cada8046a8f176f6c4e223a
 
+Plugin 'rip-rip/clang_complete'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
