@@ -1,8 +1,14 @@
+inoremap <silent> jj <ESC>
+noremap <S-j> }
+noremap <S-k> {
+noremap <S-h> ^
+noremap <S-l> $
+
+set shiftwidth=4
+set tabstop=4
 set nocompatible              " be iMproved, required
 filetype off                  " required
-set clipboard=unnamed,autoselect
-set shiftwidth=2
-set softtabstop=2
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -21,19 +27,14 @@ Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
+Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-Plugin 'c.vim'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
-Plugin 'tomasr/molokai'
+" Plugin 'ascenator/L9', {'name': 'newL9'}
 
-Plugin 'mattn/emmet-vim'
-
-Plugin 'klen/python-mode'
-
-Plugin 'rip-rip/clang_complete'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -48,5 +49,5 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-
+"
+Plugin 'cocopon/iceberg.vim'
